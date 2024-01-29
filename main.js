@@ -1,33 +1,49 @@
-if (goles == 821) {
-    let goles = prompt("Ingrese los goles actuales de Messi")
+let productos =
+    [{ id: 1, nombre: "Computadora", precio: 20 },
+    { id: 2, nombre: "Televisor", precio: 30 },
+    { id: 3, nombre: "Celular", precio: 40 },
+    { id: 4, nombre: "Maquina de Afeitar", precio: 50 },
+    { id: 5, nombre: "Cargador de bateria", precio: 60 },];
 
-    alert("Eres fan de Messi");
-} else if ((goles <= 821 && goles >= 800)) {
-    alert("Te gusta Messi pero no lo suficiente");
-} else {
-    alert("Que miras bobo")
-}
+let carrito = [];
 
-for (let i = 5; i >= 0; i--) {
-    let numero = prompt("Adivina la contraseña");
-    if (numero === "messi se lo mereci y lo consiguio gano la 3") {
-        alert("Adivinaste!");
-        break;
-    }
-    alert(`intentalo de nuevo, Intentos restantes: ${i}`);
-}
-alert("No hay más intentos seras bloqueado por 3 dias")
+function agregarProductoAlCarrito() {
+    const productoInput = document.getElementById("productoInput");
+    const nombreProducto = productoInput.value.toLowerCase(); const productoEncontrado = productos.find(producto => producto.nombre.toLowerCase() === nombreProducto);
+    if (productoEncontrado) {
+        carrito.push(productoEncontrado);
 
-
-function saludar(nombre) {
-    if (nombre) {
-        return `¡Hola, ${nombre}!`;
+        actualizarCarritoDOM();
+        calcularTotalCarrito();
     } else {
-        return '¡Hola, desconocido!';
+        mostrarMensaje("Producto no encontrado");
     }
 }
+function mostrarMensaje(mensaje) {
+    const mensajeElement =
+        document.createElement("p");
+    mensajeElement.textContent = mensaje;
+    document.body.appendChild(mensajeElement);
+    setTimeout(() => {
+        document.body.removeChild(mensajeElement);
+    }, 2000);
+}
+function actualizarCarritoDOM() {
+    const listaCarrito =
+        document.getElementById("listaCarrito");
+    listaCarrito.innerHTML = "";
 
-let nombreUsuario = "Franco";
-let saludo = saludar(nombreUsuario);
+    carrito.forEach(producto => {
+        const listItem =
+            document.createElement("li");
+        listItem.textContent =
+            `${producto.nombre} - $${producto.precio}`;
+        listaCarrito.appendChild(listItem);
+    });
+}
 
-console.log(saludo);
+function calcularTotalCarrito() {
+    const totalCarrito = document.getElementById("totalCarrito");
+    const total = carrito.reduce((sum, producto) =>
+        sum + producto.precio, 0); totalCarrito.textContent = `Total del carrito: $${total}`;
+}
