@@ -1,0 +1,136 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 span{
+    color: #ebdc09;
+}
+
+main {
+    width: auto;
+    margin: -25px auto;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#buscador {
+    text-align: center;
+    margin-top: 15px;
+    background-color: #3b3b3b;
+    height: 150px;
+}
+
+#buscador label{
+    font-size: 25px;
+    color: #ffffff;
+}
+#buscador input{
+    padding: 10px;
+    margin-top: 45px;
+    height: 20px;
+    border: 6px solid black;
+}
+#buscador button {
+    background-color: #4CAF50;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
+#carrito,
+#productos {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#listaCarrito,
+#productos {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos específicos para las secciones de productos */
+#equiposElectronicos h2,
+#ropa h2,
+#zapatillas h2 {
+    color: #ffffff;
+    background-color: #333;
+    border: 6px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para los productos de cada sección */
+#productosElectronicos .producto,
+#productosRopa .producto,
+#productosZapatillas .producto {
+    width: calc(33.33% - 20px);
+    
+}
+
+/* Estilos para el carrito y el total del carrito */
+#carrito {
+    float: center;
+    width: auto; 
+    text-align: center;
+    background-color: #45a049;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+#listaCarrito {
+    padding: 0;
+    list-style-type: none;
+}
+
+#listaCarrito li {
+    margin-bottom: 10px;
+}
+
+#totalCarrito {
+    font-weight: bold;
+    margin-top: 10px;
+}
+

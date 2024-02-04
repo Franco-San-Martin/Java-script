@@ -1,0 +1,17 @@
+[
+    { "id": 1, "nombre": "Computadora", "precio": 250000, "imagen": "./img/compu-imagen.png", "categoria": "equiposElectronicos" },
+    { "id": 2, "nombre": "Televisor", "precio": 180000, "imagen": "./img/tv-2.jpg", "categoria": "equiposElectronicos" },
+    { "id": 3, "nombre": "Celular", "precio": 650000, "imagen": "./img/celular-imagen.jpg", "categoria": "equiposElectronicos" },
+    { "id": 4, "nombre": "Maquina de Afeitar", "precio": 15000, "imagen": "./img/afeitadora-imagen.jpg", "categoria": "equiposElectronicos" },
+    { "id": 5, "nombre": "Cargador de bateria", "precio": 120000, "imagen": "./img/cargador-20amp.jpg", "categoria": "equiposElectronicos" },
+    { "id": 6, "nombre": "Mouse", "precio": 75000, "imagen": "./img/mouse-2.jpg", "categoria": "equiposElectronicos" },
+
+    { "id": 7, "nombre": "Camiseta", "precio": 15000, "imagen": "./img/Camiseta-img.jpg", "categoria": "ropa" },
+    { "id": 8, "nombre": "Jeans", "precio": 25000, "imagen": "./img/pantalones-imgweb.webp", "categoria": "ropa" },
+    { "id": 9, "nombre": "Zapatos", "precio": 55000, "imagen": "./img/zapato.jpg", "categoria": "ropa" },
+    { "id": 10, "nombre": "Sombrero", "precio": 10000, "imagen": "./img/sombrero.webp", "categoria": "ropa" },
+
+    { "id": 11, "nombre": "Zapatillas deportivas", "precio": 200000, "imagen": "./img/zapatillas-deportivas.jpg", "categoria": "zapatillas" },
+    { "id": 12, "nombre": "Zapatillas casual", "precio": 150000, "imagen": "./img/zapatillas-casuales.webp", "categoria": "zapatillas" },
+    { "id": 13, "nombre": "Sandalias", "precio": 20000, "imagen": "./img/sandalias-iño.jpg", "categoria": "zapatillas" }
+]
